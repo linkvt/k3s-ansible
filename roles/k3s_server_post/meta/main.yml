@@ -75,6 +75,11 @@ argument_specs:
         type: bool
         default: true
 
+      cilium_host_namespace_only:
+        description: Enable Cilium Host Namespace Only mode
+        type: bool
+        default: false
+
       cilium_hubble:
         description: Enable Cilium Hubble
         type: bool

@@ -184,6 +184,7 @@
         --helm-set bpf.loadBalancer.algorithm={{ bpf_lb_algorithm }}
         --helm-set bpf.loadBalancer.mode={{ bpf_lb_mode }}
         {% endif %}
+        --helm-set socketLB.hostNamespaceOnly={{ host_namespace_only }}
       environment:
         KUBECONFIG: "{{ ansible_user_dir }}/.kube/config"
       register: cilium_install_result

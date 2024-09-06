@@ -4,6 +4,8 @@ k3s_kubectl_binary: k3s kubectl
 bpf_lb_algorithm: maglev
 bpf_lb_mode: hybrid
 
+host_namespace_only: false
+
 calico_blockSize: 26  # noqa var-naming
 calico_ebpf: false
 calico_encapsulation: VXLANCrossSubnet
@@ -16,6 +18,7 @@ cilium_exportPodCIDR: true  # noqa var-naming
 cilium_bgp_my_asn: 64513
 cilium_bgp_peer_asn: 64512
 cilium_bgp_lb_cidr: 192.168.31.0/24
+cilium_host_namespace_only: true
 cilium_hubble: true
 cilium_mode: native
 
